@@ -1,117 +1,169 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Calibri, Helvetica, sans-serif;
-            background-color: pink;
-        }
-
-        .container {
-            padding: 50px;
-            background-color: lightblue;
-        }
-
-        input[type=text],
-        input[type=password],
-        textarea {
-            width: 100%;
-            padding: 15px;
-            margin: 5px 0 22px 0;
-            display: inline-block;
-            border: none;
-            background: #f1f1f1;
-        }
-
-        input[type=text]:focus,
-        input[type=password]:focus {
-            background-color: orange;
-            outline: none;
-        }
-
-        div {
-            padding: 10px 0;
-        }
-
-        hr {
-            border: 1px solid #f1f1f1;
-            margin-bottom: 25px;
-        }
-
-        .registerbtn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 16px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            opacity: 0.9;
-        }
-
-        .registerbtn:hover {
-            opacity: 1;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">  
+    <title>Every Drop Counts</title>
 </head>
-
 <body>
-    <form>
-        <div class="container">
-            <center>
-                <h1> Student Registeration Form</h1>
-            </center>
-            <hr>
-            <label> Firstname </label>
-            <input type="text" name="firstname" placeholder="Firstname" size="15" required />
-            <label> Middlename: </label>
-            <input type="text" name="middlename" placeholder="Middlename" size="15" required />
-            <label> Lastname: </label>
-            <input type="text" name="lastname" placeholder="Lastname" size="15" required />
-            <div>
-                <label>
-                    Course :
-                </label>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="image1.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="" target="_blank">HOME</a></li> 
+                <li><a href="login register.html" target="_blank">CONTACT</a></li> 
+                <li><a href="login register.html" target="_blank">ABOUT US</a></li> 
+                <li><a href="login register.html" target="_blank">PROFILE</a></li> 
+                
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>Donate Blood</h1>
+    <p>It is a service to humankind.<br">Donating a few drops could save millions of lives  </p>
+    <a href="login register new.html" target="_blank" class="hero-btn">Click to donate!</a>
+</div>
 
-                <select>
-                    <option value="Course">Course</option>
-                    <option value="BCA">BCA</option>
-                    <option value="BBA">BBA</option>
-                    <option value="B.Tech">B.Tech</option>
-                    <option value="MBA">MBA</option>
-                    <option value="MCA">MCA</option>
-                    <option value="M.Tech">M.Tech</option>
-                </select>
-            </div>
-            <div>
-                <label>
-                    Gender :
-                </label><br>
-                <input type="radio" value="Male" name="gender" checked> Male
-                <input type="radio" value="Female" name="gender"> Female
-                <input type="radio" value="Other" name="gender"> Other
+    </section>
 
-            </div>
-            <label>
-                Phone :
-            </label>
-            <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
-            <input type="text" name="phone" placeholder="phone no." size="10" / required>
-            Current Address :
-            <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
-</textarea>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+<!---- WhoCanExcessOurSite ----->    
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+<section class="access">
+    <h1>Who Can Acccess This Site?</h1>
+    <p>Anyne Who Knows A Littel About Computer Or Mobile Phones Can Access This Site. </p>
 
-            <label for="psw-repeat"><b>Re-type Password</b></label>
-            <input type="password" placeholder="Retype Password" name="psw-repeat" required>
-            <button type="submit" class="registerbtn">Register</button>
-    </form>
+    <div class="row">
+        <div class="access-col">
+            <li><a href="login register.html">Donor</a></li>
+            <p>Any healthy adult, both male and female, can donate blood. Men can donate safely once in every three months while women can donate every four months. Donor should be in the age group of 18 to 65 years.</p>
+        </div>
+        <div class="access-col">
+            <li><a href="login register.html">Blood Bank</a></li>
+            <p>A blood bank is a center where blood gathered as a result of blood donation is stored and preserved for later use in blood transfusion. The term "blood bank" typically refers to a division of a hospital where the storage of blood product occurs and where proper testing is performed.</p>
+        </div>
+        <div class="access-col">
+            <li><a href="login register.html">Hospital</a></li>
+            <p>A hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment and also gives Blood Transfusion Service.</p>
+        </div>
+        <div class="access-col">
+            <li><a href="login register.html">Reciever</a></li>
+            <p>A reciever is nothing but a person who needs blood during his hospitalisation time. If a person is suffering from lack of blood then Blood is transfused.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!---- WhyDonateBlood ---->
+
+<section class="why">
+
+    <div class="row">
+        <div class="why-col">
+            <img src="https://static.toiimg.com/thumb/msid-69772169,imgsize-640296,width-800,height-600,resizemode-75/69772169.jpg">
+        </div>
+    
+        <div class="why-col">
+            <h1>Why Should I Donate Blood?</h1>
+            <h4> Safe blood saves lives!</h4>
+            <p> A decision to donate your blood can save a life. Donating blood regularly is beneficial to prevent and reduce heart attacks and liver ailment. The risk of heart and liver related problem is caused by the iron overload in the body. Donating blood helps in maintaining the iron level in the body and thus reduce those risk. Cancer is the most feared and deadly disease.</p>
+            <a href="https://www.who.int/news-room/q-a-detail/blood-products-why-should-i-donate-blood" class="hero-btn red-btn" target="_blank">Know More</a>
+
+        </div>
+    
+
+    </div>
+
+</section>
+
+
+<!---- HowToDonateBlood ---->
+
+<section class="how">
+
+    <div class="row">
+        
+        <div class="how-col">
+            <h1>How To Donate Blood?</h1>
+            <p>A person can donate blood either in a licensed blood bank, blood donation camps or at a blood mobile. Any person can walk-in voluntarily any time round the clock at their own convenience to donate blood in a licensed blood bank. Beside, an In-house camp can be organized in a blood bank on pre-fixed dates with the Organisers and Blood Bank in charge.</p>
+            <a href="http://nbtc.naco.gov.in/page/donationprocess/" class="hero-btn red-btn" target="_blank">Know More</a>
+
+        </div>
+        <div class="how-col">
+            <img src="https://qphs.fs.quoracdn.net/main-qimg-83e7d8ca920d0009b16a6872a9638e4c">
+        </div>
+        
+    </div>
+
+</section>
+
+
+
+<!---- How we help in blood donation ---->
+
+<section class="help">
+
+    <div class="row">
+        <div class="help-col">
+            <img src="https://blog.sesamehub.com/ali-femina2/files/2019/09/08f2fccc45d2564f74ead4a6d5086871.png">
+        </div>
+        <div class="help-col">
+            <h1>How We Help In Blood Donation?</h1>
+            <p>The system is designed to meet the needs of all blood banks and hospitals in the future.  Immediate identification of a blood donor's blood type and location can play an important role in emergency blood supply.  It can be used from anywhere and from almost any device.</p>
+            <a href="" class="hero-btn red-btn" target="_blank">Know More</a>
+
+        </div>
+    
+        
+    </div>
+
+</section>
+
+
+
+<!---- When can I donate blood again ---->
+
+<section class="when">
+
+    <div class="row">
+        
+        <div class="when-col">
+            <h1>When Can I Donate Blood Again?</h1>
+            <p>You must wait a minimum of 56 days between whole blood donations. You must wait at least 7 days after donating blood before you can donate platelets. After an automated double red cell collection, you must wait 112 days before donating again.</p>
+            <a href="" class="hero-btn red-btn" target="_blank">Know More</a>
+
+        </div>
+        <div class="when-col">
+            <img src="https://qphs.fs.quoracdn.net/main-qimg-57d66fc1199a65161842f7aedcd427e6">
+        </div>
+       
+    </div>
+
+</section>
+
+
+
+
+
+<!-----JavaScript for Toggle Menu----->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
 </body>
-
 </html>
